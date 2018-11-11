@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="location_hint">Enter location</string>
+    <string name="error_no_internet">Please connect your device to internet to get weather data!</string>
+    <string name="error_default">Can\'t find %s.  Please try again later, or look for another place close to %s</string>
+
+</resources>

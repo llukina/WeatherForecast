@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/forecast_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forecast_description_text_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:padding="15dp"
+                android:text="Monday, Nov. 2018"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/forecast_high_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forecast_date_text"
+                android:layout_alignRight="@id/forecast_date_text"
+                android:drawableLeft="@android:drawable/arrow_up_float"
+                android:text="High: "
+                android:textColor="@color/red_700"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forecast_low_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forecast_date_text"
+                android:layout_alignStart="@id/forecast_date_text"
+                android:drawableLeft="@android:drawable/arrow_down_float"
+                android:text="Low:"
+                android:textColor="@color/blue_700"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forecast_description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Mostly Cloudy"
+                android:textSize="33sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
